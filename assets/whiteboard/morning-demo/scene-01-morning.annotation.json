@@ -1,0 +1,76 @@
+{
+  "sceneId": "scene-01",
+  "canvas": { "width": 1600, "height": 900 },
+  "storyBasis": "清晨，远山与太阳升起，小鸟飞过天空，近处小树轻轻摇动。",
+  "sceneDurationMs": 9000,
+  "elements": [
+    {
+      "id": "hills",
+      "label": "远山与地平线",
+      "sequence": 1,
+      "narrativeRole": "场景铺垫：交代清晨的远景环境",
+      "subtitle": "远处有一座小山，太阳慢慢升起。",
+      "type": "structure",
+      "region": { "x": 160, "y": 425, "width": 690, "height": 132 },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 200,
+        "durationMs": 1300,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [400, 450], "end": [180, 550], "easing": "easeInOut" }
+    },
+    {
+      "id": "sun",
+      "label": "升起的太阳",
+      "sequence": 2,
+      "narrativeRole": "关键物体：太阳出现，点明清晨",
+      "subtitle": "远处有一座小山，太阳慢慢升起。",
+      "type": "object",
+      "region": { "x": 1125, "y": 110, "width": 285, "height": 285 },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 1600,
+        "durationMs": 1300,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [1265, 150], "end": [1265, 350], "easing": "easeInOut" }
+    },
+    {
+      "id": "bird",
+      "label": "飞过的小鸟",
+      "sequence": 3,
+      "narrativeRole": "动作：小鸟飞过，画面由静转动",
+      "subtitle": "一只小鸟从天空飞过。",
+      "type": "object",
+      "region": { "x": 775, "y": 180, "width": 180, "height": 90 },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 3200,
+        "durationMs": 2000,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [790, 230], "end": [940, 230], "easing": "easeInOut" }
+    },
+    {
+      "id": "tree",
+      "label": "摇动的小树",
+      "sequence": 4,
+      "narrativeRole": "收束：近景小树摇动，清晨开始",
+      "subtitle": "近处的小树轻轻摇动，清晨开始了。",
+      "type": "object",
+      "region": { "x": 130, "y": 558, "width": 225, "height": 312 },
+      "reveal": {
+        "direction": "bottom_to_top",
+        "startMs": 6200,
+        "durationMs": 2200,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [240, 862], "end": [240, 575], "easing": "easeInOut" }
+    }
+  ]
+}
