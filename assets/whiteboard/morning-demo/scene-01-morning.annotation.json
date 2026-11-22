@@ -1,25 +1,25 @@
 {
   "sceneId": "scene-01",
   "canvas": { "width": 1600, "height": 900 },
-  "storyBasis": "清晨，远山与太阳升起，小鸟飞过天空，近处小树轻轻摇动。",
-  "sceneDurationMs": 9000,
+  "storyBasis": "清晨：三层远山与太阳升起，云朵飘浮，两只小鸟飞过天空，前景小树与花草随风轻动。",
+  "sceneDurationMs": 9400,
   "elements": [
     {
       "id": "hills",
-      "label": "远山与地平线",
+      "label": "三层远山与地平线",
       "sequence": 1,
-      "narrativeRole": "场景铺垫：交代清晨的远景环境",
+      "narrativeRole": "场景铺垫：交代清晨的远景空间",
       "subtitle": "远处有一座小山，太阳慢慢升起。",
       "type": "structure",
-      "region": { "x": 160, "y": 425, "width": 690, "height": 132 },
+      "region": { "x": 120, "y": 412, "width": 822, "height": 200 },
       "reveal": {
         "direction": "top_to_bottom",
-        "startMs": 200,
-        "durationMs": 1300,
+        "startMs": 150,
+        "durationMs": 1100,
         "maskPaddingPx": 22,
         "protectedRegions": []
       },
-      "handPath": { "start": [400, 450], "end": [180, 550], "easing": "easeInOut" }
+      "handPath": { "start": [330, 440], "end": [140, 600], "easing": "easeInOut" }
     },
     {
       "id": "sun",
@@ -28,49 +28,100 @@
       "narrativeRole": "关键物体：太阳出现，点明清晨",
       "subtitle": "远处有一座小山，太阳慢慢升起。",
       "type": "object",
-      "region": { "x": 1125, "y": 110, "width": 285, "height": 285 },
+      "region": { "x": 1150, "y": 82, "width": 290, "height": 285 },
       "reveal": {
         "direction": "top_to_bottom",
-        "startMs": 1600,
-        "durationMs": 1300,
+        "startMs": 1350,
+        "durationMs": 1000,
         "maskPaddingPx": 22,
         "protectedRegions": []
       },
-      "handPath": { "start": [1265, 150], "end": [1265, 350], "easing": "easeInOut" }
+      "handPath": { "start": [1290, 100], "end": [1290, 340], "easing": "easeInOut" }
     },
     {
-      "id": "bird",
-      "label": "飞过的小鸟",
+      "id": "cloud1",
+      "label": "左上云朵",
       "sequence": 3,
-      "narrativeRole": "动作：小鸟飞过，画面由静转动",
-      "subtitle": "一只小鸟从天空飞过。",
+      "narrativeRole": "氛围：天空中加入云朵，画面更完整",
+      "subtitle": "远处有一座小山，太阳慢慢升起。",
       "type": "object",
-      "region": { "x": 775, "y": 180, "width": 180, "height": 90 },
+      "region": { "x": 352, "y": 104, "width": 296, "height": 144 },
       "reveal": {
         "direction": "left_to_right",
-        "startMs": 3200,
-        "durationMs": 2000,
+        "startMs": 2400,
+        "durationMs": 650,
         "maskPaddingPx": 22,
         "protectedRegions": []
       },
-      "handPath": { "start": [790, 230], "end": [940, 230], "easing": "easeInOut" }
+      "handPath": { "start": [368, 232], "end": [632, 232], "easing": "easeInOut" }
+    },
+    {
+      "id": "cloud2",
+      "label": "中部云朵",
+      "sequence": 4,
+      "narrativeRole": "氛围：天空间中景云朵，增强层次",
+      "subtitle": "一只小鸟从天空飞过。",
+      "type": "object",
+      "region": { "x": 750, "y": 296, "width": 200, "height": 104 },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 3080,
+        "durationMs": 620,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [755, 392], "end": [945, 392], "easing": "easeInOut" }
+    },
+    {
+      "id": "birds",
+      "label": "飞过的两只小鸟",
+      "sequence": 5,
+      "narrativeRole": "动作：小鸟掠过天空，画面由静转动",
+      "subtitle": "一只小鸟从天空飞过。",
+      "type": "object",
+      "region": { "x": 858, "y": 158, "width": 296, "height": 134 },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 3800,
+        "durationMs": 1550,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [870, 212], "end": [1148, 268], "easing": "easeInOut" }
     },
     {
       "id": "tree",
-      "label": "摇动的小树",
-      "sequence": 4,
-      "narrativeRole": "收束：近景小树摇动，清晨开始",
+      "label": "前景小树",
+      "sequence": 6,
+      "narrativeRole": "主体：近景小树成为画面焦点",
       "subtitle": "近处的小树轻轻摇动，清晨开始了。",
       "type": "object",
-      "region": { "x": 130, "y": 558, "width": 225, "height": 312 },
+      "region": { "x": 170, "y": 618, "width": 270, "height": 272 },
       "reveal": {
         "direction": "bottom_to_top",
-        "startMs": 6200,
-        "durationMs": 2200,
+        "startMs": 6150,
+        "durationMs": 1800,
         "maskPaddingPx": 22,
         "protectedRegions": []
       },
-      "handPath": { "start": [240, 862], "end": [240, 575], "easing": "easeInOut" }
+      "handPath": { "start": [300, 868], "end": [300, 624], "easing": "easeInOut" }
+    },
+    {
+      "id": "grass",
+      "label": "草丛与小花",
+      "sequence": 7,
+      "narrativeRole": "收束：地面花草补齐前景，清晨开始",
+      "subtitle": "近处的小树轻轻摇动，清晨开始了。",
+      "type": "structure",
+      "region": { "x": 452, "y": 780, "width": 1000, "height": 110 },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 8000,
+        "durationMs": 900,
+        "maskPaddingPx": 22,
+        "protectedRegions": []
+      },
+      "handPath": { "start": [470, 878], "end": [1420, 878], "easing": "easeInOut" }
     }
   ]
 }
